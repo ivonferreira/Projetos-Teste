@@ -12,6 +12,7 @@ const porIdade = pessoas.reduce((pessoasIdade,pessoaAtual)=>{
     }
     return pessoasIdade*/
     pessoasIdade[pessoaAtual.idade] = pessoasIdade[pessoaAtual.idade] || [] ;
-    pessoasIdade[pessoaAtual.idade].push(pessoaAtual.nome);
+    pessoasIdade[pessoaAtual.idade].push(pessoaAtual.nome)
+    return pessoasIdade
 },{})
 console.log(porIdade)
